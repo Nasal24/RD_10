@@ -10,14 +10,14 @@ int main(){
     int x = 5, y = 10;
 
     
-    cout << "Before swap using references: x = " << x << ", y = " << y << endl;
+    cout << "before swap (links): x = " << x << ", y = " << y << endl;
     swap(x, y);
-    cout << "After swap using references: x = " << x << ", y = " << y << endl;
+    cout << "after swap (links): x = " << x << ", y = " << y << endl;
 
     
-    cout << "Before swap using pointers: x = " << x << ", y = " << y << endl;
+    cout << "before swap (pointers): x = " << x << ", y = " << y << endl;
     swap(&x, &y);
-    cout << "After swap using pointers: x = " << x << ", y = " << y << endl;
+    cout << "after swap (pointers): x = " << x << ", y = " << y << endl;
 
 
     
@@ -25,20 +25,20 @@ int main(){
     int numbers2[] = { 1, 2, 3, 4, 5 };
     int size2 = sizeof(numbers2) / sizeof(numbers2[0]);
 
-    int searchFor = 3;
-    if (find(numbers2, size2, searchFor)) {
-        std::cout << searchFor << " is found in the array." << std::endl;
+    int search_for = 3;
+    if (find(numbers2, size2, search_for)) {
+        cout << search_for << " is found in the array" << endl;
     }
     else {
-        std::cout << searchFor << " is not found in the array." << std::endl;
+        cout << search_for << " is not found in the array" << endl;
     }
 
-    searchFor = 6;
-    if (find(numbers2, size2, searchFor)) {
-        std::cout << searchFor << " is found in the array." << std::endl;
+    search_for = 6;
+    if (find(numbers2, size2, search_for)) {
+        cout << search_for << " is found in the array" << endl;
     }
     else {
-        std::cout << searchFor << " is not found in the array." << std::endl;
+        cout << search_for << " is not found in the array" << endl;
     }
 
     
@@ -49,10 +49,10 @@ int main(){
     double sum;
 
     if (calculateSum(numbers3, size3, sum)) {
-        std::cout << "Sum of the array: " << sum << std::endl;
+        cout << "Sum of the array: " << sum << endl;
     }
     else {
-        std::cout << "Array size is invalid or zero." << std::endl;
+        cout << "Array size is invalid or zero." << endl;
     }
 
 }
